@@ -1,0 +1,262 @@
+/*Bakgrunnsfarge*/
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, white,white 50%, #CBDBC5 50%, #CBDBC5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+/*header*/
+
+.header
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    height:75px;
+    top:0;
+    position: fixed;
+    background-color: white;
+}
+
+.box-type1
+{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box-type1 h1
+{
+  width: 60%;
+  color:#CBDBC5;
+  font-size: 40px;
+}
+
+.box-type1 h1 span
+{
+  font-size: 50px;
+  color:rgb(92, 117, 92);
+}
+
+ul
+{
+    list-style-type: none;
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left:0;
+    
+}
+
+li a
+{
+    text-decoration: none;
+    color: rgb(92, 117, 92);
+    font-size: 20px;
+}
+
+li a:hover
+{
+    color:rgb(134, 170, 134);
+}
+
+/* INNHOLD FORSIDE UNDER HEADER */
+
+.wrapper-frontpage
+{
+    
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+    flex-direction: column;
+    
+}
+
+.frontpage
+{
+    border:10px solid #CBDBC5;
+	border-image-slice: 1;
+    height:400px;
+    width: 50%;
+    min-width: 600px;
+   
+}
+
+.frontpage img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.frontpage-undertext
+{
+    padding-top: 60px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+/* INNHOLD ABOUT */
+
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.wrapper-about
+{
+    width:100%;
+    height:100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "overlap";
+    text-align: center;
+}
+
+.about-element1 h1
+{
+   
+    border:8px solid  #CBDBC5;
+    background-color: white;
+    width:180px;
+    margin-top:-40px;
+    color: rgb(92, 117, 92);
+}
+
+.about-element1
+{
+    border:10px solid #E8E6E6;
+    width:70%;
+    height: 70%;
+    grid-area: overlap;
+    justify-self: center;
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.about-element2
+{
+  
+    width:70%;
+    height: 100%;
+    grid-area: overlap;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    
+}   
+
+.about-bilde
+{
+   
+    width:40%;
+    height:35%;
+    overflow: hidden;
+}
+
+.about-bilde img
+{
+ width: 400px; 
+ object-fit: cover;
+}
+
+.about-element1 p
+{
+    margin-top: 5%;
+    width: 90%;
+    line-height: 30px;
+    overflow: auto;
+    
+}
+
+
+/* footer */
+
+.footer
+{
+    width:100%;
+    background-color: #CBDBC5;
+    height: 100px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fab
+{
+    color:white;
+    text-decoration: none;
+    font-size: 60px;
+    margin:10px;
+}
+
+.fab:hover
+{
+   color:#E8E6E6;
+}
+
+
+
+/*Drop down menyen*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: rgb(92, 117, 92);
+    font-size: 20px;
+  }
+  .dropdown:hover {
+    color:rgb(134, 170, 134);
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding-left:20px;
+    padding-right:20px;
+    text-align: center;
+    padding-top: 10px;
+   
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
