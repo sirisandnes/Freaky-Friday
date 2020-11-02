@@ -30,6 +30,14 @@
     align-items: center;
     
 }
+.box-type2
+{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 .box-type1 h1
 {
@@ -118,6 +126,11 @@ li a:hover
 .recepie a
 {
     text-decoration: none;
+}
+
+.recepie:hover
+{
+    border:10px solid #f3f0f0;
 }
 
 .recepie img

@@ -1,0 +1,186 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+@media only screen and (max-width: 1100px)
+{
+    .box-type1
+    {
+        width:40%;
+       
+    }
+    .box-type2
+    {
+        width:60%;
+       
+    }
+    .box-type2 ul 
+    {
+        width:90%;
+    }
+    .about-element1
+    {
+        width:90%;
+    }
+    
+    .about-element2
+    {
+     width: 90%;  
+    }
+
+    .about-bilde
+    {
+        width:40%;
+    }
+   
+}
+
+@media only screen and (max-width: 800px)
+
+{
+
+
+    .wrapper-about
+    {
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    }
+
+    .about-element1
+    {
+    border:10px solid #E8E6E6;
+    width:90%;
+    height: 700px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: white;
+    padding-bottom: 50px;
+    
+    }
+    .about-element2
+    {
+  
+    width:90%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-left: 10px solid #E8E6E6;
+    border-right:10px solid #E8E6E6;
+    border-bottom: 10px solid #E8E6E6;
+    
+    }   
+    .about-bilde
+    {
+   
+    width:40%;
+    height:100%;
+    overflow: hidden;
+    
+ 
+    }
+
+    .about-bilde img
+    {
+    width: 400px; 
+    object-fit: cover;
+    }
+
+   
+}
+
+@media only screen and (max-width: 600px)
+{
+    body 
+    {
+        background-image: none;
+    }
+    .wrapper-frontpage
+    {
+        border:1px solid blue;
+        height: 160px;
+        margin-bottom: 50px;
+    }
+    .frontpage 
+    {
+        display: none;
+    }
+    .frontpage-undertext
+    {
+        border:1px solid red;
+        background-color: #CBDBC5;
+        padding:0;
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .wrapper-about
+    {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 300px;
+    }
+
+    .about-element1
+    {
+    border:10px solid #E8E6E6;
+    width:90%;
+    height: 700px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: white;
+    padding-bottom: 50px;
+    }
+
+    .about-element2
+    {
+  
+    width:90%;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    border-left: 10px solid #E8E6E6;
+    border-right:10px solid #E8E6E6;
+    border-bottom: 10px solid #E8E6E6;
+    align-items: center;
+    margin-bottom: 100px;
+    
+    }   
+    .about-bilde
+    {
+   
+       border:1px solid red;
+       width:100%;
+       margin-bottom: 10px;
+       
+ 
+    }
+
+    .about-bilde img
+    {
+       height:100%;
+    }
+
+    .footer
+    {
+        margin-top: 100px;
+    }
+
+}
