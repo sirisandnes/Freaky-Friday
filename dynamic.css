@@ -7,86 +7,23 @@
 }
 
 
-@media only screen and (max-width: 1100px)
-{
-    .about-element1
-    {
-        width:90%;
-    }
 
-    .about-element2
-    {
-     width: 90%;  
-    }
-
-    .about-bilde
-    {
-        width:40%;
-    }
-   
-}
 
 @media only screen and (max-width: 800px)
 
 {
 
 
-    .wrapper-about
-    {
-    width:100%;
-    height:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 100px;
-    }
-
-    .about-element1
-    {
-    border:10px solid #E8E6E6;
-    width:90%;
-    height: 700px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: white;
-    padding-bottom: 50px;
-    
-    }
-    .about-element2
-    {
-  
-    width:90%;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border-left: 10px solid #E8E6E6;
-    border-right:10px solid #E8E6E6;
-    border-bottom: 10px solid #E8E6E6;
-    
-    }   
-    .about-bilde
-    {
-   
-    width:40%;
-    height:100%;
-    overflow: hidden;
-    
- 
-    }
-
-    .about-bilde img
-    {
-    width: 400px; 
-    object-fit: cover;
-    }
 
     /*HEADER*/  /*DYNAMISK BLIR HAMBURGER*/
+
+    .wrapper-frontpage
+    {
+        margin-top: 85px;
+    }
    
     .navbar {
-        background-color: rgba(255, 255, 255, 0.575);
+        background-color: rgba(255, 255, 255, 0.945);
         position: fixed;
         top: 0;
         width: 100%;
@@ -94,6 +31,8 @@
         display: block;
         height: auto;
     }
+
+  
     .hamburger {
         display: block;
         position: absolute;
@@ -116,88 +55,35 @@
 
 @media only screen and (max-width: 600px)
 {
-    .about-bilde img
+    .frontpage
     {
-    width: 400px; 
-    object-fit: contain;
-    }   
-
- 
-    /*body 
-    {
-        background-image: none;
-    }
-    .wrapper-frontpage
-    {
-        border:1px solid blue;
-        height: 160px;
-        margin-bottom: 50px;
-    }
-    .frontpage 
-    {
-        display: none;
-    }
-    .frontpage-undertext
-    {
-        border:1px solid red;
-        background-color: #CBDBC5;
-        padding:0;
-        height: 160px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-    }
-    .wrapper-about
-    {
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 300px;
-    }
-
-    .about-element1
-    {
-    border:10px solid #E8E6E6;
-    width:90%;
-    height: 700px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: white;
-    padding-bottom: 50px;
-    }
-
-    .about-element2
-    {
-  
-    width:90%;
-    height:500px;
-    display: flex;
-    flex-direction: column;
-    border-left: 10px solid #E8E6E6;
-    border-right:10px solid #E8E6E6;
-    border-bottom: 10px solid #E8E6E6;
-    align-items: center;
-    margin-bottom: 100px;
-    
-    }   
-    .about-bilde
-    {
+    width: 500px;
    
-       border:1px solid red;
-       width:80%;
-       margin-bottom: 10px;
-       
- 
     }
+}
 
-
-    .footer
+@media only screen and (max-width: 500px)
+{
+    .frontpage
     {
-        margin-top: 100px;
+    width: 400px;
+    
     }
-/**/
+}
+
+@media only screen and (max-width: 400px)
+{
+    .frontpage
+    {
+    width: 300px;
+  
+    }
+}
+    @media only screen and (max-width: 300px)
+{
+    .frontpage
+    {
+    width: 200px;
+   
+    }
 }
