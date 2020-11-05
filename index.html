@@ -19,35 +19,30 @@
     </head>
     <body>
 
-        <header>
-            <div class="header">
-                <div class="box-type1">
-                    <h1><span>EAT</span>GREEN</h1>
-                </div>
-                <div class="box-type2">
-                    <ul>
-                        <li>
-                            <a href="#om-oss">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="vegeterian.html">VEGETERIAN</a>
-                        </li>
-                        <li>
-                            <a href="vegan.html">VEGAN</a>
-                        </li>
-                        <li>
-                            <div class="dropdown">
-                                <span>LANGUAGE</span>
-                                <div class="dropdown-content">
-                                  <a href ="indexnorsk.html"><img src="./bilder/norway-flag-square-icon-32.png"></a>
-                                  <a href ="index.html"><img src="./bilder/united-states-of-america-flag-square-icon-32.png"></a>
-                                </div>
-                              </div>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar">
+            <div class="nav-leftside">
+                <a href="index.html"><span>Eat</span>Green</a>
             </div>
-        </header>
+            <div class="nav-rightside">
+                <ul class="menyliste" id="menylisteId">
+                    <li><a href="#om-oss">ABOUT</a></li>
+                    <li><a href="vegeterian.html">VEGETERIAN</a></li>
+                    <li><a href="vegan.html">VEGAN</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <span>LANGUAGE</span>
+                            <div class="dropdown-content">
+                                <a href="indexnorsk.html"><img src="./bilder/norway-flag-square-icon-32.png"></a>
+                                <a href="index.html"><img src="./bilder/united-states-of-america-flag-square-icon-32.png"></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <span class="hamburger" id="hamburgerId">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </div>
+        </nav>
 
 
 
@@ -89,8 +84,21 @@
             </div>
         </footer>
 
+        <script type="text/javascript">
+            let menylisteVar = document.getElementById('menylisteId');
+            let hamburgerVar = document.getElementById('hamburgerId');
+    
+            hamburgerVar.addEventListener('click', function() {
+                menylisteVar.classList.toggle('aktiv');
+            });
+    
+            menylisteVar.addEventListener('click', function() {
+                if (menylisteVar.classList.contains('aktiv')) {
+                    menylisteVar.classList.toggle('aktiv');
+                };
+            });
+        </script>
 
-       
 
     </body>
 

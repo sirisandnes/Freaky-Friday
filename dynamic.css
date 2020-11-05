@@ -9,25 +9,11 @@
 
 @media only screen and (max-width: 1100px)
 {
-    .box-type1
-    {
-        width:40%;
-       
-    }
-    .box-type2
-    {
-        width:60%;
-       
-    }
-    .box-type2 ul 
-    {
-        width:90%;
-    }
     .about-element1
     {
         width:90%;
     }
-    
+
     .about-element2
     {
      width: 90%;  
@@ -97,12 +83,47 @@
     object-fit: cover;
     }
 
+    /*HEADER*/  /*DYNAMISK BLIR HAMBURGER*/
+   
+    .navbar {
+        background-color: rgba(255, 255, 255, 0.575);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        display: block;
+        height: auto;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 40px;
+        color: #5C755D;
+    }
+    .menyliste {
+        list-style-type: none;
+        display: none;
+    }
+    .aktiv {
+        display: block;
+    }
+
    
 }
 
 @media only screen and (max-width: 600px)
 {
-    body 
+    .about-bilde img
+    {
+    width: 400px; 
+    object-fit: contain;
+    }   
+
+ 
+    /*body 
     {
         background-image: none;
     }
@@ -167,20 +188,16 @@
     {
    
        border:1px solid red;
-       width:100%;
+       width:80%;
        margin-bottom: 10px;
        
  
     }
 
-    .about-bilde img
-    {
-       height:100%;
-    }
 
     .footer
     {
         margin-top: 100px;
     }
-
+/**/
 }
